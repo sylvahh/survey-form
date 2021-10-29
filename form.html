@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initail-scale=1.0">
+    <title>application form</title>
+    <link rel="stylesheet" href="app.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anaheim">
+<body>
+    <div id="outside">
+        <form id="app-form" action="" method="POST">
+            <h1 id="title">
+                Application for permission to date my daughter  
+            </h1>
+             <p id="note"> <b>Note:</b> Form is to be completed at least 21 days prior to date. <p>
+             <fieldset>
+                 <legend>personal details</legend>
+                 <div>
+                     <div>
+                        <label id="name-label" for="name">name: </label>
+                        <input type="text" requried id="name-input" name="user_name" placeholder="Enter name here">
+                     </div> 
+                     <div>
+                        <label for="address" id="address-label"> address:</label>
+                        <input type="text" reqired id="address" name="address" placeholder="enter address here">
+                     </div>
+                     <div>
+                        <label for="email" id="email-label"> email:</label>
+                        <input type="email" reqired id="email" name="user_email" placeholder="enter email here">
+                     </div>
+                     <div>
+                        <label for="phone-number" id="phone-label">phone number: </label>
+                        <input type="tel" reqired id="phone-number" name="user_number" placeholder="enter 10 digit number"
+                        min="1" max="9">
+                     </div>
+                     <div>
+                        <label for="iq" id="iq-label">IQ: </label>
+                        <input type="text" required id="iq" name="user_iq" placeholder="enter IQ here" >
+                    </div>
+                    <div>
+                        <label for="gender" id="gender-label"> gender</label>
+                        <p>
+                            <input type="radio" name="gender" value="male" checked> male <br>
+                            <input type="radio" name="gender" value="female"> female <br>
+                            <input type="radio" name="gender" value="other">  others <br>
+                        </p>
+                    </div>
+                    <div>
+                        <label for="date" id="prop-date" style="display: inline;"> date of proposed date: </label>
+                        <input type="date" required id="date" name="prop_date">
+                    </div>
+                 </div>
+             </fieldset> 
+             <fieldset>
+                 <div>
+                     <div>
+                         <label for="list" id="check-list" style="display: inline;">  check all that apply </label>
+                         <p>
+                             <input type="checkbox" name="tattoo" value="tattoo"> i have tattoos and/or piercings <br>
+                             <input type="checkbox" name="age" value="age"> i am more than 2 years older than my daughter <br>
+                             <input type="checkbox" name="car" value="car"> i own a panel van or v8 ute <br>
+                             <input type="checkbox" name="work" value="work" checked> i work full-time <br>
+                             <input type="checkbox" name="parent" value="parent" checked> my parent are rich<br>
+                             <input type="checkbox" name="location" value="location" checked> is the date at a well lit public location <br>    
+                         </p>
+                     </div>
+                 </div>
+             </fieldset>
+             <fieldset>
+                 <div>
+                     <div>
+                         <label for="politics" id="status" style="display: inline;"> political persuasions: </label>
+                         <select name="politics" class="dropdown">
+                             <option value="left">  left wing </option>
+                             <option value="right"> right wing </option>
+                             <option value="conservative"> conservative </option>
+                             <option value="nazi"> nazi </option>
+                         </select>
+                     </div>
+                     <div>
+                         <label for="education" id="edu-status" style="display: inline;">  level completed: </label>
+                         <select name="education" class="dropdown">
+                             <option value="university"> university </option>
+                             <option value="college">college </option>
+                             <option value="high"> high school </option>
+                             <option value="none">none </option>
+                         </select>
+                     </div>
+                 </div>
+             </fieldset>
+             <fieldset>
+                 <legend>
+                     essay section 
+                 </legend>
+                 <div>
+                     <label for="essay" ></label>
+                     <p>
+                        in 50 words or more explain why you want to date my dughter 
+                     </p>
+                     <textarea name="essay" id="message" cols="30" rows="4" placeholder="enter text here "></textarea>
+                 </div>
+                 <div>
+                     <label for="upload"></label>
+                     <p>
+                         please upload contact deatils for 2 references 
+                     </p>
+                     <input type="file" name="file" id="upload-file">
+                 </div>
+                 <div>
+                     <label for="upload"></label>
+                     <p>
+                         upload plice clearance certificate, bank statement and medical certificate here:
+                     </p>
+                     <button> attach file </button>
+                 </div>
+                     
+             </fieldset>
+             <div id="submit">
+                 <button type="submit" id="submitbtn">send your application</button>
+                 
+             </div>
+        </form>        
+    </div>
+</body>
